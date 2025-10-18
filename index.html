@@ -4,11 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO/OSI Model</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ISO/OSI Model works! :))</h1>
-    <p>Open Systems Interconnection model enables and normlaize for different computer systems to comunicate using standard protocols. It is universal language for computer networking
-
+    <div class="container">
+        <h1>ISO/OSI Model</h1>
+        <h2 id="introduction">I. Introduction <a href="#introduction">#</a></h2>
+        <p>
+            OSI stands for Open Systems Interconnection. It is a reference model set by ISO (International Organization for Standardization). "A reference model" means that OSI model is a framework, a standard for other models to follow. The model consists of seven layers which present a computer network. The layers' purpose is to describe systems interconnection in some kind of consecutive steps. A protocol derived from OSI model does not necessarily have to consist of the same number layers. To sum up, it shows conceptual picture of how networking works.
+        </p>
+        <h2 id="layers">II. Layers description <a href="#layers">#</a></h2>
+        <table class="table dark-table">
+            <thead>
+                <tr>
+                    <th scope=col>Layer name</th>
+                    <th scope=col>Description</th>
+                    <th scope=col>Classification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Application</td>
+                    <td></td>
+                    <td rowspan=4>upper</td>
+                </tr>
+                <tr>
+                    <td scope="row">Presentaion</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Session</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Transport</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Network</td>
+                    <td></td>
+                    <td rowspan="3">lower</td>
+                </tr>
+                <tr>
+                    <td scope="row">Data link</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Physical</td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <h2 id="data-units">III. Protocol data units <a href="#data-units">#</a></h2>
+        <table class="table dark-table">
+            <thead>
+                <tr>
+                    <th>Layer</th>
+                    <th>Protocol data unit</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Application</td>
+                    <td rowspan=3>Data</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Presentaion</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Session</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Transport</td>
+                    <td>Segment / datagram</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Network</td>
+                    <td>Packet</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Data link</td>
+                    <td>Frames</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">Physical</td>
+                    <td>Bits</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="protocols">IV. Protocols examples <a href="#protocols">#</a></h2>
+        <table class="table dark-table">
+            <thead>
+                <tr>
+                    <th>Layer</th>
+                    <th>Protocols</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Application</td>
+                    <td>SIP, DHCP, DNS, FTP?, HTTP, NNTP?, Telnet, RTP</td>
+                </tr>
+                <tr>
+                    <td scope="row">Presentaion</td>
+                    <td>TLS, SSL</td>
+                </tr>
+                <tr>
+                    <td scope="row">Session</td>
+                    <td>NetBIOS</td>
+                </tr>
+                <tr>
+                    <td scope="row">Transport</td>
+                    <td>TCP, UDP</td>
+                </tr>
+                <tr>
+                    <td scope="row">Network</td>
+                    <td>IPv4, IPv6, ICMP, IGMP</td>
+                </tr>
+                <tr>
+                    <td scope="row">Data link</td>
+                    <td>ARP, IEEE 802.11, SLIP, L2TP</td>
+                </tr>
+                <tr>
+                    <td scope="row">Physical</td>
+                    <td>RS-232, RS-449, USB, IEEE 1394, Bluetooth</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </p>
 </body>
 </html>
