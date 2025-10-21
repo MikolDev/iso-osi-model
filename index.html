@@ -36,11 +36,11 @@
                 </tr>
                 <tr>
                     <td scope="row">Session</td>
-                    <td></td>
+                    <td>This layer provides mechanism for opening, managing and closing a session. A session can be defined as "a conversation" - an exchange of transmissions between parties, delimited in time and maintained by the computers until the session termination (synchronization). In connectionless approaches responsibilities of this layer are mainly skipped. However, for example in UDP, we can treat the context (having destination IP and port and other party listening) as some kind of session and assigns this mechanism to this layer.</td>
                 </tr>
                 <tr>
                     <td scope="row">Transport</td>
-                    <td></td>
+                    <td>This layer ensures that packets are transported reliably and without errors. It establishes connections between network devices, acknowledges the receipt of packets. In case of errors it resends the packets. In case of connection-oriented usages this layer divides the message to smaller parts before sending and constructs whole message from parts when receiving. It ensures the consistency of the data (checksums). However, in case of connectionless applications, when reliabality is not that important, it just sends the packets without establishing the connection (no handshake).</td>
                 </tr>
                 <tr>
                     <td scope="row">Network</td>
