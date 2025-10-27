@@ -71,35 +71,33 @@
                 <tr>
                     <td scope="row">Application</td>
                     <td rowspan=3>Data</td>
-                    <td></td>
+                    <td rowspan="3">These layers don't provide physicall transmission, don't add or remove any standardize headers, and depend highly on the application or context. Data however is transformed (e. g. encryption, covnerting to ASCII).</td>
                 </tr>
                 <tr>
                     <td scope="row">Presentaion</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td scope="row">Session</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td scope="row">Transport</td>
-                    <td>Segment / datagram</td>
-                    <td></td>
+                    <td>Segment</td>
+                    <td>Segment has: source and destination ports, sequence number (the position of the segment in the stream), acknowledgment number (acknowledges receipt of all previous bytes, only in TCP, not in UDP), flags, checksum, options and actual data.</td>
                 </tr>
                 <tr>
                     <td scope="row">Network</td>
                     <td>Packet</td>
-                    <td></td>
+                    <td>A packet carries data from one network to another by using logical addressing. It consists of header and payload. Header has: addresses (sender's and receiver's), TTL (time to live) - networks hop limit; prevents closed circuits, packet length, protocol identifier, priority.  </td>
                 </tr>
                 <tr>
                     <td scope="row">Data link</td>
                     <td>Frames</td>
-                    <td></td>
+                    <td>It's the data wrapped with header. Header has destination and source addresses (e. g. MAC). In payload there is actual data. Frames are separated with frame check sequence (FCS) which provides error detection.</td>
                 </tr>
                 <tr>
                     <td scope="row">Physical</td>
                     <td>Bits</td>
-                    <td></td>
+                    <td>The most basic unit of information. Represent logical state of two possible values: 1 or 0.</td>
                 </tr>
             </tbody>
         </table>
