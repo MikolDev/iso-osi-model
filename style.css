@@ -11,3 +11,8 @@ body {
     background-color: inherit;
     color: inherit;
 }
+
+img {
+  width: 960px; 
+  height: auto;
+}
