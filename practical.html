@@ -13,8 +13,8 @@
         <h1>Assignment 1 - Practical Part</h1>
         <h2>I. Ping command</h2>
         <img src="img/ping_cmd.png" class="rounded mx-auto d-block">
-        <p>ARP - Adress Resolution Protocol corresponds to Data Link layer. It asks router it's mac address</br>DNS - Domain Name System corresponds to Application Layer. It translates google.com into 142.250.203.206 </br>ICMP - Interner Control Message Protocol corresponds to Network layer. Echo Request to 142.250.203.206 and waits for an Echo Reply</p>
         <img src="img/ping_wireshark.png" class="rounded mx-auto d-block">
+        <p>ARP - Adress Resolution Protocol corresponds to Data Link layer. It asks router it's mac address</br>DNS - Domain Name System corresponds to Application Layer. It translates google.com into 142.250.203.206 </br>ICMP - Interner Control Message Protocol corresponds to Network layer. Echo Request to 142.250.203.206 and waits for an Echo Reply</p>
 
         <h2>II. Utilizing the SCP</h2>
         <div class="d-flex justify-content-center gap-3">
@@ -24,6 +24,20 @@
         </div>
         <img src="img/scp_w1.png" class="rounded mx-auto d-block">
         <img src="img/scp_w2.png" class="rounded mx-auto d-block">
+        <p>TCP - Transport Layer Protocol - transport layer for scp</p>
+
+        
+        <h2>III. Accessing webpage it.p.lodz.pl</h2>
+        <img src="img/it_web.png" class="rounded mx-auto d-block">
+        <img src="img/it_wireshark_1.png" class="rounded mx-auto d-block">
+        <img src="img/it_wireshark_2.png" class="rounded mx-auto d-block">
+        <p>Filters: dns.qry.name contains "it.p.lodz.pl" or tcp.port == 443 or tls or quic</p>
+        
+        <h2>IV. Accessing webpage studife.it.p.lodz.pl</h2>
+        <img src="img/studife_web.png" class="rounded mx-auto d-block">
+        <img src="img/studife_wireshark.png" class="rounded mx-auto d-block">
+        <p>Filters: dns.qry.name contains "studife.it.p.lodz.pl"  or tcp.port == 80 or http</p>
+
         <h2><a href="index.html">Theoretical Part</a></h2>
     </div>
 </body>
