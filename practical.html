@@ -16,9 +16,11 @@
         <img src="img/ping_wireshark.png" class="rounded mx-auto d-block">
         <p>
             Protocols :<br>
-            ARP (Data link Layer) - Adress Resolution Protocol corresponds to Data Link layer. Router asks my computer about  it's mac address</br>
-            DNS (Application Layer) - Domain Name System corresponds to Application Layer. It translates google.com into 142.250.203.206 </br>
+            ARP (Data link Layer) - Adress Resolution Protocol. Asks for MAC adress of device with IP adress 192.169.100.1</br>
+            DNS (Application Layer) - Domain Name System translates google.com into 142.250.203.206. It runs over UDP (Transport layer) </br>
             ICMP (Network Layer) - Interner Control Message Protocol corresponds to Network layer. Echo Request to 142.250.203.206 and waits for an Echo Reply <br>
+            UDP (Transport Layer) - User Datagram Protocol  is a connectionless transport protocol that allows applications to send messages, called datagrams, without establishing a connection.
+            
         </p>
 
         <h2>II. Utilizing the SCP</h2>
@@ -27,12 +29,10 @@
             <img src="img/scp_maindir.png" alt="">
             <img src="img/cat.png" alt="">
         </div>
-        <img src="img/scp_w1.png" class="rounded mx-auto d-block">
-        <img src="img/scp_w2.png" class="rounded mx-auto d-block">
-        <p>
+        <img src="img/scp_w.png" class="rounded mx-auto d-block">        <p>
             Protocols :<br>
-            TCP (Tarnsport Layer) -  <br>
-            SSHv2 (Application Layer) - secure protocol used for remote login and command execution over an unsecured network. It replaces SSHv1 with stronger encryption and better security features.
+            SSHv2 (Application Layer) - Secure Shell version 2 is a secure network protocol that enables encrypted communication between client and a server. It supports Secure Copy Protocol. It runs over TCP (Transport Layer) <br>
+            TLS1.3V (Presentation Layer) -  protocol that secures communications over a computer network by encrypting data between a client and a server
         </p>
 
         
@@ -42,13 +42,14 @@
         <img src="img/it_wireshark_2.png" class="rounded mx-auto d-block">
         <p>
             Used Wireshark filters: dns.qry.name contains "it.p.lodz.pl" or tcp.port == 443 or tls or quic <br>
+            dns.qry.name - filter traffic to see all queries for a specific domain <br>
+            tcp.port == 443 - standard port for HTTPS
             Protocols :<br>
-            DNS (Application Layer) -   <br>
+            DNS (Application Layer) Runs over UDP(Transport Layer)<br>
             IPv4 (Network Layer) - Internet Protocol version 4  provides logical addressing and routing for devices across networks. Each device is assigned a 32-bit IP address <br>
-            TCP (Transport Layer) - Transmission Control Protocolis a connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data between applications over a network <br>
-            TLS1.3V (Presentation Layer) - Transport Layer Seciurity provides secure communication over a network for eg in HTTPS<br>
-            QUIC (Transport Layer) -developed by Google to improve performance and security over traditional TCP. It runs over UDP <br>
-            UDP (Transport Layer) - User Datagram Protocol  is a connectionless transport protocol that allows applications to send messages, called datagrams, without establishing a connection.
+            TCP (Transport Layer) - Transmission Control Protocol is a connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data between applications over a network <br>
+            QUIC (Transport Layer) - It runs over UDP. Combines transport and security handshakees  into one step
+            TLS1.3V (Presentation Layer) 
         </p>
         
 
@@ -57,13 +58,15 @@
         <img src="img/studife_wireshark.png" class="rounded mx-auto d-block">
         <p>
             Used Wireshark filters: dns.qry.name contains "studife.it.p.lodz.pl"  or tcp.port == 80 or http <br>
+            dns.qry.name - filter traffic to see all queries for a specific domain <br>
+            tcp.port == 80 - standard port for HTTP
             Protocols :<br>
-            DNS (Application Layer) - <br>
-            TCP (Transport Layer) - <br>
+            DNS (Application Layer)<br>
+            TCP (Transport Layer)<br>
             HTTP (Application Layer) - HyperText Transfer Protocol HTTP defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.<br>
-            IPv4 - <br>
-            UDP - <br>
-            TCP - <br>
+            IPv4(Network Layer)<br>
+            UDP (Transport Layer) <br>
+            TCP (Transport Layer) <br>
         </p>
 
         <h2><a href="index.html">Theoretical Part</a></h2>
