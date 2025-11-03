@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td scope="row">Session</td>
-                    <td>This layer provides mechanism for opening, managing and closing a session. A session can be defined as "a conversation" - an exchange of transmissions between parties, delimited in time and maintained by the computers until the session termination (synchronization). In connectionless approaches responsibilities of this layer are mainly skipped. However, for example in UDP, we can treat the context (having destination IP and port and other party listening) as some kind of session and assigns this mechanism to this layer.</td>
+                    <td>This layer provides mechanism for opening, managing and closing a session. A session can be defined as "a conversation" - an exchange of transmissions between parties, delimited in time and maintained by the computers until the session termination (synchronization). In connectionless approaches responsibilities of this layer are mainly skipped.</td>
                 </tr>
                 <tr>
                     <td scope="row">Transport</td>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td scope="row">Physical</td>
-                    <td>Specifies physical and electrical characteristics of the network: specification of the transmission medium (type of wire, max. length, material), shape and type of connectors, topology (bus, ring, star...), frequency of transmission, size. Sends bits without assigning meaning to them.</td>
+                    <td>Specifies physical and electrical characteristics of the network: specification of the transmission medium (type of wire, max. length, material), shape and type of connectors, topology (bus, ring, star...), frequency of transmission, size.</td>
                 </tr>
                 
             </tbody>
@@ -71,7 +71,7 @@
                 <tr>
                     <td scope="row">Application</td>
                     <td rowspan=3>Data</td>
-                    <td rowspan="3">These layers don't provide physicall transmission, don't add or remove any standardize headers, and depend highly on the application or context. Data however is transformed (e. g. encryption, covnerting to ASCII).</td>
+                    <td rowspan="3">These layers don't provide physical transmission, don't add or remove any standardized headers, and depend highly on the application or context. Data however is transformed (e. g. encryption, covnerting to ASCII).</td>
                 </tr>
                 <tr>
                     <td scope="row">Presentaion</td>
@@ -140,7 +140,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2 id="protocols">V. Protocols references<a href="#protocols">#</a></h2>
+        <h2 id="protocols">V. Protocols references <a href="#protocols-refs">#</a></h2>
         <ul>
             <li>SIP - Session Initiation Protocol - used for initiating, maintaining, modifying, and terminating communication sessions that involve multimedia elements such as voice, video, and messaging.</li>
             <li>DHCP - Dynamic Host Configuration Protocol</li>
@@ -157,7 +157,13 @@
             <li>TCP - Transmission Control Protocol - etablishes a reliable connection using three-way handshake. Provides reliable, ordered and error-checked delivery of streams of bytes via IP network.</li>
             <li>UDP - User Datagram Protocol - provides fast, connectionless and lightweight communication. Does not guarantee reliabality.</li>
             <li>IP - Internet Protocol</li>
-            <li>ICMP - Internet Control Message Protocol</li>
+            <li>ICMP - Internet Control Message Protocol - used by network devices such as routers, gateways and hosts to send error messages and operational information.</li>
+            <li>IGMP - Internet Group Management Protocol - enables communication between hosts and local routers to identify multicast group members within a LAN. Unlike unicast (one-to-one) or broadcast (one-to-all), IGMP supports multicast (one-to-many) communication.</li>
+            <li>ARP - Address Resolution Protocol</li>
+            <li>IEEE 802.11 - enables implementing <i>wireless</i> local area networks.</li>
+            <li>SLIP - Serial Line Internet Protocol - an encapsulation of the <i>Internet Protocol</i> designed to work over serial ports and router connections.</li>
+            <li>L2TP - Layer Two Tunneling Protcol - tunneling protocol; creates a <i>tunnel</i> - a sequence of encapsulated packets that simulate a direct link between two distant networks.</li>
+            <li>IEEE 1394 - an interface standard for a serial bus for high-speed communications and real-time data transfer.</li>
         </ul>
         <h2 id="n"><a href="practical.html">Practical Part</a></h2>
     </div>
