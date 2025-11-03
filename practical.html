@@ -16,9 +16,9 @@
         <img src="img/ping_wireshark.png" class="rounded mx-auto d-block">
         <p>
             Protocols :<br>
-            ARP (Data link Layer) - Adress Resolution Protocol. Asks for MAC adress of device with IP adress 192.169.100.1</br>
+            ARP (Data link Layer) - Adress Resolution Protocol. Asks for MAC adress of device with IP adress 192.168.100.1</br>
             DNS (Application Layer) - Domain Name System translates google.com into 142.250.203.206. It runs over UDP (Transport layer) </br>
-            ICMP (Network Layer) - Interner Control Message Protocol corresponds to Network layer. Echo Request to 142.250.203.206 and waits for an Echo Reply <br>
+            ICMP (Network Layer) - Interner Control Message Protocol corresponds to Network layer. Echo Request to 142.250.203.206 and waits for an Echo Reply
         </p>
 
         <h2>II. Utilizing the SCP</h2>
@@ -27,10 +27,11 @@
             <img src="img/scp_maindir.png" alt="">
             <img src="img/cat.png" alt="">
         </div>
-        <img src="img/scp_w.png" class="rounded mx-auto d-block">        <p>
+        <img src="img/scp_w.png" class="rounded mx-auto d-block">        
+        <p>
             Protocols :<br>
             SSHv2 (Application Layer) - Secure Shell version 2 is a secure network protocol that enables encrypted communication between client and a server. It supports Secure Copy Protocol. It runs over TCP (Transport Layer) <br>
-            TLS1.3V (Presentation Layer) -  protocol that secures communications over a computer network by encrypting data between a client and a server
+            TLS1.3V (Presentation Layer) - Transport Layer Security protocol that secures communications over a computer network by encrypting data between a client and a server
         </p>
 
         
@@ -41,11 +42,11 @@
         <p>
             Used Wireshark filters: dns.qry.name contains "it.p.lodz.pl" or tcp.port == 443 or tls or quic <br>
             dns.qry.name - filter traffic to see all queries for a specific domain <br>
-            tcp.port == 443 - standard port for HTTPS
+            tcp.port == 443 - standard port for HTTPS <br>
             Protocols :<br>
             DNS (Application Layer) Runs over UDP(Transport Layer)<br>
             TCP (Transport Layer) - Transmission Control Protocol is a connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data between applications over a network <br>
-            QUIC (Transport Layer) - It runs over UDP. Combines transport and security handshakees into one step
+            QUIC (Transport Layer) - It runs over UDP. Combines transport and security handshakees into one step <br>
             TLS1.3V (Presentation Layer) 
         </p>
         
@@ -56,7 +57,7 @@
         <p>
             Used Wireshark filters: dns.qry.name contains "studife.it.p.lodz.pl"  or tcp.port == 80 or http <br>
             dns.qry.name - filter traffic to see all queries for a specific domain <br>
-            tcp.port == 80 - standard port for HTTP
+            tcp.port == 80 - standard port for HTTP <br>
             Protocols :<br>
             DNS (Application Layer)<br>
             TCP (Transport Layer)<br>
